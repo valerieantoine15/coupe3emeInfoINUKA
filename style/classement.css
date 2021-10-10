@@ -1,0 +1,111 @@
+.classement {
+  height: 100vh;
+  width: 100%;
+}
+
+.containerMain {
+  padding: 0;
+  background: url("../images/stadium_2.jpg") center/cover no-repeat;
+}
+
+.bg_black_ma {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.507);
+  height: 100%;
+}
+
+.title_group {
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.classement div table {
+  width: 500px;
+}
+
+.classement div {
+  margin-bottom: 10px;
+}
+.classement div table,
+td,
+th {
+  border: 1px solid rgba(0, 0, 0, 0.413);
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.classement div legend {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.classement table th {
+  background-color: #222;
+  color: #f1f1f1f1;
+}
+.classement td {
+  padding: 20px;
+  color: #0a0a0aff;
+}
+.classement tr:nth-child(odd) {
+  background-color: rgb(208, 208, 208);
+}
+.classement tr:nth-child(even) {
+  background-color: rgb(240, 240, 240);
+}
+
+.classement tr td:nth-child(1) {
+  padding-right: 60px;
+  color: #0e6ba8ff;
+  display: flex;
+}
+
+.classement td img {
+  width: 25px;
+  margin-right: 8px;
+}
+@media screen and (max-width: 1300px) {
+  .bg_black_ma {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .classement div table {
+    width: 280px;
+  }
+
+  .classement div{
+    margin-bottom: 5px;
+  }
+  .classement td img {
+    width: 15px;
+  }
+  .classement tr td:nth-child(1) {
+    padding-right: 16px;
+  }
+  .classement td {
+    padding: 8px;
+  }
+}
+@media screen and (max-width: 489px) {
+  .classement div table {
+    width: 100px;
+  }
+
+  .classement td img {
+    width: 5px;
+  }
+  .classement tr td:nth-child(1) {
+    padding-right: 6px;
+  }
+  .classement td {
+    padding: 3px;
+  }
+}

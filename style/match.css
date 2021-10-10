@@ -1,0 +1,103 @@
+.containerMain {
+  padding: 0;
+  background: url("../images/stadium.jpg") center/cover no-repeat;
+}
+.bg_black_ma {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.507);
+  height: 100%;
+}
+.match_group {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.match_card .ma {
+  text-transform: uppercase;
+  color: #fbf9ffff;
+  background-color: #fbf9ffff;
+  margin-bottom: 10px;
+  box-shadow: 1px 2px 6px rgb(1, 1, 1, 0, 7);
+  padding: 4px;
+  color: #0a0a0aff;
+}
+
+.match_card form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a0a0aff;
+  color: #fbf9ffff;
+  width: 520px;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.match_card form:nth-child(odd) {
+  background-color: rgba(39, 39, 39, 0.938);
+}
+.equipe {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+  width: 130px;
+}
+
+.match_card img {
+  width: 25px;
+  margin-right: 5px;
+}
+.score {
+  display: flex;
+  width: 30px;
+  justify-content: space-between;
+}
+
+.score {
+  margin: 0px 40px 0px -50px;
+}
+.score input {
+  border-radius: 10px;
+  color: white;
+  background-color: #0e6ba8ff;
+  outline: 0;
+  border: 0;
+  margin: 0 5px;
+  padding: 3px 0;
+  text-align: center;
+}
+
+.score p span {
+  margin: 0 5px;
+}
+
+.match_card button {
+  border: 0;
+  cursor: pointer;
+  padding: 2px;
+  background-color: #0e6ba8ff;
+  color: white;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  height: 40px;
+  border-radius: 10px;
+}
+.match_card button.active-button {
+  background-color: rgb(71, 71, 71);
+  color: #fbf9ffff;
+}
+
+img {
+  width: 25px;
+}
+
+@media screen and (max-width: 1300px) {
+  .bg_black_ma {
+    flex-direction: column;
+  }
+}
